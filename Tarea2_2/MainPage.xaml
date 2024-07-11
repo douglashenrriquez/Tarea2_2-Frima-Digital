@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Tarea2_2"
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.SignaturePad;assembly=Syncfusion.Maui.SignaturePad"
+             x:Class="Tarea2_2.MainPage">
+
+     <StackLayout Padding="20">
+        <Label Text="Nombre:" FontSize="18" />
+        <Entry x:Name="nombreEntry" />
+
+        <Label Text="Descripción:" FontSize="18" />
+        <Entry x:Name="descripcionEntry" />
+
+        <syncfusion:SfSignaturePad x:Name="signaturePad" HeightRequest="200" />
+
+        <Label Padding="5" ></Label>
+
+        <Button Text="Guardar Firma" Clicked="OnGuardarFirmaClicked" Background="Green" FontSize="18"/>
+
+        <Label Padding="10" ></Label>
+        <Button Text="Ver Firmas Guardadas" Clicked="OnVerFirmasClicked" Background="#154360" FontSize="18"/>
+    </StackLayout>
+</ContentPage>
